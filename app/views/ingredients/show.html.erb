@@ -10,6 +10,20 @@
   <%= @ingredient.color %>
 </p>
 
+<p>
+  <b>Creator:</b>
+  <%= @ingredient.user.name %>
+</p>
+
+<p>
+  <b>Used in these burgers:</b>
+  <ul>
+	<% @ingredient.burgers.each do |burger| %>
+		<li><%= burger.name %> by <%= link_to burger.user.name, user_path(burger.user) %></li>
+	<% end %>	
+  </ul>
+  
+</p>
 
 <%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |
 <%= link_to 'Back', ingredients_path %>

@@ -10,6 +10,25 @@
   <%= @user.email %>
 </p>
 
+<p>
+  <b><%= @user.name %>'s burgers:</b>
+  <ul>
+	<% @user.burgers.each do |burger| %>
+		<li><%= link_to burger.name, burger_path(burger) %></li>
+	<% end %>	
+  </ul>
+  
+</p>
+
+<p>
+  <b><%= @user.name %>'s ingredients:</b>
+  <ul>
+	<% @user.ingredients.each do |ingredient| %>
+		<li><%= link_to ingredient.name, ingredient_path(ingredient) %>, which is a <%= ingredient.color %> ingredient.</li>
+	<% end %>	
+  </ul>
+  
+</p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

@@ -11,15 +11,9 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= simple_form_for @user do |f| %>
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.button :submit %>
+  <% end %>
 <% end %>

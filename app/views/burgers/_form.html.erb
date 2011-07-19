@@ -11,10 +11,10 @@
     </div>
   <% end %>
 
-<%= simple_form_for @burger do |f| %>
-  <%= f.input :name %>
-  <%= f.association :ingredients %>
-  <%= f.association :user %>
-  <%= f.button :submit %>
-<% end %>
+  <%= simple_form_for @burger do |f| %>
+    <%= f.input :name %>
+    <%= f.association :ingredients %>
+    <%= f.association :user %>
+    <%= f.button :submit %>
+  <% end %>
 <% end %>

@@ -11,15 +11,10 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :color %><br />
-    <%= f.text_field :color %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= simple_form_for @ingredient do |f| %>
+    <%= f.input :name %>
+    <%= f.input :color %>
+    <%= f.association :user %>
+    <%= f.button :submit %>
+  <% end %>
 <% end %>
