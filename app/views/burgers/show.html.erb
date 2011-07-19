@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @burger.name %>
+  <b>Ingredients:</b>
+  <% @burger.ingredients.each do |ingredient| %>
+  	<%= @ingredient.name %>
+  	<%= @ingredient.color %>
+  <% end %>
+  <%= @burger.name %>
+  <b>Creator:</b>
+  <%= @burger.user.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_burger_path(@burger) %> |
+<%= link_to 'Back', burgers_path %>

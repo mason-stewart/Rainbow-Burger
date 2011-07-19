@@ -1,0 +1,23 @@
+<h1>Listing burgers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @burgers.each do |burger| %>
+  <tr>
+    <td><%= burger.name %></td>
+    <td><%= link_to 'Show', burger %></td>
+    <td><%= link_to 'Edit', edit_burger_path(burger) %></td>
+    <td><%= link_to 'Destroy', burger, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Burger', new_burger_path %>
