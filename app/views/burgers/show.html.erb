@@ -3,7 +3,7 @@
 
 
  <p>
-  <b><%= @burger.name %>'s ingredients:</b>
+  <h2><%= @burger.name %>'s ingredients:</h2>
   <ul>
   <% @burger.ingredients.each do |ingredient| %>
     <li><%= link_to ingredient.name, ingredient_path(ingredient) %>, which is a <%= ingredient.color %> ingredient.</li>

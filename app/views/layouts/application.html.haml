@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'print.css', :media => 'print'
+    /[if IE]
+      = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+    %title Hey 
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+  %body.two-column
+    #header
+      - if signed_in?
+        = link_to "Sign out", sign_out_path, :method => :delete
+      - else
+        = link_to "Sign in", sign_in_path 
+      #flash
+        - flash.each do |key, value| 
+          %div{:id => "#flash_#{key}"}
+            =h value
+    #main-content
+      = yield
+      = link_to "All Burgers", burgers_path
+      = link_to "All Ingredients", ingredients_path

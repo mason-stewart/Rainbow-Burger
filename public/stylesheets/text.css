@@ -1,0 +1,100 @@
+/*
+Syntax error: File to import not found or unreadable: 960/text.
+              Load paths:
+                Compass::SpriteImporter
+                /Users/masondesu/rainbowburger/public/stylesheets/sass
+                /Users/masondesu/rainbowburger/app/stylesheets
+                /Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/compass-0.11.5/frameworks/blueprint/stylesheets
+                /Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/compass-0.11.5/frameworks/compass/stylesheets
+        on line 6 of /Users/masondesu/rainbowburger/app/stylesheets/text.scss
+
+1: /* 960 Grid System ~ Text CSS.
+2:  * Learn more ~ http://960.gs/
+3:  * *
+4:  * Licensed under GPL and MIT. */
+5: 
+6: @import "960/text";
+7: 
+8: @include text;
+
+Backtrace:
+/Users/masondesu/rainbowburger/app/stylesheets/text.scss:6
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/import_node.rb:64:in `rescue in import'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/import_node.rb:42:in `import'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/import_node.rb:25:in `imported_file'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:148:in `rescue in visit_import'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:153:in `visit_import'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/tree/root_node.rb:20:in `render'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/engine.rb:293:in `_render'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/engine.rb:241:in `block in render'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/util.rb:297:in `silence_sass_warnings'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/engine.rb:241:in `render'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `each'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `each'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/sass-3.1.7/lib/sass/plugin/rack.rb:51:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/actionpack-3.0.8/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/actionpack-3.0.8/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/actionpack-3.0.8/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/actionpack-3.0.8/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/actionpack-3.0.8/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/actionpack-3.0.8/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/activerecord-3.0.8/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/activerecord-3.0.8/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/activerecord-3.0.8/lib/active_record/query_cache.rb:12:in `cache'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/activerecord-3.0.8/lib/active_record/query_cache.rb:31:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/activerecord-3.0.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/actionpack-3.0.8/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/activesupport-3.0.8/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/actionpack-3.0.8/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/actionpack-3.0.8/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/actionpack-3.0.8/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/railties-3.0.8/lib/rails/rack/logger.rb:13:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/activesupport-3.0.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/actionpack-3.0.8/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/railties-3.0.8/lib/rails/application.rb:168:in `call'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@global/gems/railties-3.0.8/lib/rails/application.rb:77:in `method_missing'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/thin-1.2.11/lib/thin/connection.rb:84:in `block in pre_process'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/thin-1.2.11/lib/thin/connection.rb:82:in `catch'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/thin-1.2.11/lib/thin/connection.rb:82:in `pre_process'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/thin-1.2.11/lib/thin/connection.rb:57:in `process'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/thin-1.2.11/lib/thin/connection.rb:42:in `receive_data'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/thin-1.2.11/lib/thin/backends/base.rb:61:in `start'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/thin-1.2.11/lib/thin/server.rb:159:in `start'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/thin-1.2.11/lib/thin/controllers/controller.rb:86:in `start'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/thin-1.2.11/lib/thin/runner.rb:185:in `run_command'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/thin-1.2.11/lib/thin/runner.rb:151:in `run!'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/thin-1.2.11/bin/thin:6:in `<top (required)>'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/bin/thin:19:in `load'
+/Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/bin/thin:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: 960/text.\A               Load paths:\A                 Compass::SpriteImporter\A                 /Users/masondesu/rainbowburger/public/stylesheets/sass\A                 /Users/masondesu/rainbowburger/app/stylesheets\A                 /Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/compass-0.11.5/frameworks/blueprint/stylesheets\A                 /Users/masondesu/.rvm/gems/ruby-1.9.2-p180@rainbowburger/gems/compass-0.11.5/frameworks/compass/stylesheets\A         on line 6 of /Users/masondesu/rainbowburger/app/stylesheets/text.scss\A \A 1: /* 960 Grid System ~ Text CSS.\A 2:  * Learn more ~ http://960.gs/\A 3:  * *\A 4:  * Licensed under GPL and MIT. */\A 5: \A 6: @import \"960/text\";\A 7: \A 8: @include text;"; }

@@ -5,6 +5,10 @@ gem 'rails', '3.0.8'
 gem 'thin'
 gem 'simple_form'
 gem 'clearance'
+gem 'haml'
+gem 'haml-rails'
+gem 'compass', '>= 0.11.5'
+gem 'barista'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
