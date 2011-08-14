@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110719222938) do
+ActiveRecord::Schema.define(:version => 20110814025227) do
 
   create_table "burgers", :force => true do |t|
     t.string   "name"
@@ -37,6 +37,14 @@ ActiveRecord::Schema.define(:version => 20110719222938) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "encrypted_password", :limit => 128
+    t.string   "salt",               :limit => 128
+    t.string   "confirmation_token", :limit => 128
+    t.string   "remember_token",     :limit => 128
+    t.string   "username"
   end
+
+  add_index "users", ["email"], :name => "index_users_on_email"
+  add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
 
 end

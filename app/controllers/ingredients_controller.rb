@@ -41,6 +41,7 @@ class IngredientsController < ApplicationController
   # POST /ingredients.xml
   def create
     @ingredient = Ingredient.new(params[:ingredient])
+    @ingredient.user_id = current_user.id
 
     respond_to do |format|
       if @ingredient.save

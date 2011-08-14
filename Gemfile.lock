@@ -30,7 +30,12 @@ GEM
     activesupport (3.0.8)
     arel (2.0.10)
     builder (2.1.2)
+    clearance (0.12.0)
+      diesel (~> 0.1.4)
+      rails (>= 3.0)
     daemons (1.1.4)
+    diesel (0.1.5)
+      railties
     erubis (2.6.6)
       abstract (>= 1.0.0)
     eventmachine (0.12.10)
@@ -78,6 +83,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  clearance
   rails (= 3.0.8)
   simple_form
   sqlite3

@@ -41,9 +41,10 @@ class BurgersController < ApplicationController
   # POST /burgers.xml
   def create
     @burger = Burger.new(params[:burger])
-
+    @burger.user_id = current_user.id
     respond_to do |format|
       if @burger.save
+
         format.html { redirect_to(@burger, :notice => 'Burger was successfully created.') }
         format.xml  { render :xml => @burger, :status => :created, :location => @burger }
       else

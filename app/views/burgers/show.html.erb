@@ -1,16 +1,19 @@
+<h1>  <%= @burger.name %></h1>
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @burger.name %>
-  <b>Ingredients:</b>
+
+ <p>
+  <b><%= @burger.name %>'s ingredients:</b>
+  <ul>
   <% @burger.ingredients.each do |ingredient| %>
-  	<%= ingredient.name %>
-  	<%= ingredient.color %>
-  <% end %>
-  <%= @burger.name %>
+    <li><%= link_to ingredient.name, ingredient_path(ingredient) %>, which is a <%= ingredient.color %> ingredient.</li>
+  <% end %> 
+  </ul>
+  
+</p>
+
   <b>Creator:</b>
-  <%= @burger.user.name %>
+  <%= link_to @burger.user.username, user_path(@burger.user) %>
 </p>
 
 

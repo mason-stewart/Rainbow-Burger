@@ -1,9 +1,6 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @ingredient.name %></h1>
 
-<p>
-  <b>Name:</b>
-  <%= @ingredient.name %>
-</p>
+<p id="notice"><%= notice %></p>
 
 <p>
   <b>Color:</b>
@@ -12,14 +9,14 @@
 
 <p>
   <b>Creator:</b>
-  <%= @ingredient.user.name %>
+  <%= link_to @ingredient.user.username, @ingredient.user %>
 </p>
 
 <p>
   <b>Used in these burgers:</b>
   <ul>
 	<% @ingredient.burgers.each do |burger| %>
-		<li><%= burger.name %> by <%= link_to burger.user.name, user_path(burger.user) %></li>
+		<li><%= burger.name %> by <%= link_to burger.user.username, user_path(burger.user) %></li>
 	<% end %>	
   </ul>
   

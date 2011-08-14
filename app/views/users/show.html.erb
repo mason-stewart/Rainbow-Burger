@@ -2,7 +2,7 @@
 
 <p>
   <b>Name:</b>
-  <%= @user.name %>
+  <%= @user.username %>
 </p>
 
 <p>
@@ -11,7 +11,7 @@
 </p>
 
 <p>
-  <b><%= @user.name %>'s burgers:</b>
+  <b><%= @user.username %>'s burgers:</b>
   <ul>
 	<% @user.burgers.each do |burger| %>
 		<li><%= link_to burger.name, burger_path(burger) %></li>
@@ -21,7 +21,7 @@
 </p>
 
 <p>
-  <b><%= @user.name %>'s ingredients:</b>
+  <b><%= @user.username %>'s ingredients:</b>
   <ul>
 	<% @user.ingredients.each do |ingredient| %>
 		<li><%= link_to ingredient.name, ingredient_path(ingredient) %>, which is a <%= ingredient.color %> ingredient.</li>

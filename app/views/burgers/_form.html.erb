@@ -1,20 +1,7 @@
 <%= form_for(@burger) do |f| %>
-  <% if @burger.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@burger.errors.count, "error") %> prohibited this burger from being saved:</h2>
-
-      <ul>
-      <% @burger.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
   <%= simple_form_for @burger do |f| %>
     <%= f.input :name %>
     <%= f.association :ingredients %>
-    <%= f.association :user %>
     <%= f.button :submit %>
   <% end %>
 <% end %>
