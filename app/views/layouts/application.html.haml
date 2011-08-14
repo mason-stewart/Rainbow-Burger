@@ -10,6 +10,7 @@
     = csrf_meta_tag
   %body.two-column
     #header
+      %h1#title Rainbow Burger
       - if signed_in?
         = link_to "Sign out", sign_out_path, :method => :delete
       - else

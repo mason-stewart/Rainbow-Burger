@@ -9,6 +9,7 @@ gem 'haml'
 gem 'haml-rails'
 gem 'compass', '>= 0.11.5'
 gem 'barista'
+gem 'jquery-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
