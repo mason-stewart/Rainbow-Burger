@@ -1,17 +1,20 @@
+# Rename this to database.yml if you wanna kick ass with PostgreSQL
+# and of course fill in the username and pw for you local postgresql setup.
+
 development:
   adapter: postgresql
   encoding: utf8
   database: rainbow-db-development
-  username: rainbow-db-admin
-  password: Asswhipping1!
+  username: [username]
+  password: [password]
   template: template0 # Required for UTF8 encoding
 
 test:
   adapter: postgresql
   encoding: utf8
   database: rainbow-db-test
-  username: rainbow-db-admin
-  password: Asswhipping1!
+  username: [username]
+  password: [password]
   template: template0 # Required for UTF8 encoding
 
 production:
